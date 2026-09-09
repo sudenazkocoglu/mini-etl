@@ -11,10 +11,11 @@ Harici kütüphane bağımlılığı olmadan, tamamen standart Python kütüphan
 - **Güvenilirlik:** %85+ test kapsamı, `mypy --strict` tip denetimi ve `Hypothesis` ile property-based testler.
 
 ## 🚀 Çalıştırma
-```bash
+
 python -m src.mini_etl.cli run --config pipeline.yaml
 
 Bellek ve Streaming Performansı (Benchmark)
+
 `ru_maxrss` kullanarak yaptığımız bellek tüketim testleri, generator mimarimizin büyük veri setlerini düşük ve sabit RAM tüketimiyle işlediğini kanıtlamaktadır:
 ```
 | Satır Sayısı | İşlem Süresi | Zirve RAM (Peak RSS) |
